@@ -15,16 +15,14 @@
     <section class = "gameArea">
         <div class = "game-screen">
             <div class = "scoreTime">
-                <h1>Score: <span id = "score">0</span></h1>
-                <h1>Time: <span id = "time">0</span></h1>
+                <h1>Time: <span id = "time">00:00</span></h1>
             </div>
 
             <div class="game-board" id = "game-board">
             </div>
 
             <div class = "controls">
-                <button id = "start">Start</button>
-                <button id = "stop">Stop</button>
+                <button id = "start" onclick="start();">Start</button>
                 <button id = "reset" onclick="window.location.reload();">Reset</button>
             </div>
         </div>

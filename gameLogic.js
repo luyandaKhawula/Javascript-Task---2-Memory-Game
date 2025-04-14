@@ -34,3 +34,26 @@ for (let i = 0; i < shuffledLetters.length; i++) {
 
     document.getElementById("game-board").appendChild(letterBox);
 }
+
+const finish = new Date().getTime() + (1000 * 10 * 30);
+function timer(){
+    const now = new Date().getTime();
+    const remaining = finish - now;
+
+    if (remaining < 0){
+        document.getElementById("time").innerHTML = "00:00:00";
+        clearInterval(interval);
+        return; 
+    }
+
+    const minutes = Math.floor((remaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((remaining % (1000 * 60)) / 1000);
+
+    document.getElementById("time").innerHTML = `${minutes}:${seconds}`;
+    
+}
+
+function start(){
+    timer();
+    const interval = setInterval(timer, 1000);
+}
