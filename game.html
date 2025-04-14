@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Greatest Memory Game Ever Made!</title>
     <link rel="stylesheet" href="gameStyle.css">
-    <script src="gameLogic.js"></script>
+    <script src="gameLogic.js" defer></script>
 </head>
 <body>
-    <div class = "game-screen">
+    <section class = "header">
         <h1>Welcome To The Greatest Memory Game Ever Made!</h1>
-        <div class = "controls">
-            <h1>Score: <span id = "score">0</span></h1>
-            <h1>Time left: <span id = "time-left">60</span></h1>
-        </div>
+    </section>
 
-        <div class="game-board" id = "game-board">
+    <section class = "gameArea">
+        <div class = "game-screen">
+            <div class = "scoreTime">
+                <h1>Score: <span id = "score">0</span></h1>
+                <h1>Time: <span id = "time">0</span></h1>
+            </div>
+            
+            <div class="game-board" id = "game-board">
+            </div>
+
+            <div class = "controls">
+                <button id = "start">Start</button>
+                <button id = "stop">Stop</button>
+                <button id = "reset">Reset</button>
+            </div>
         </div>
-    </div>
+    </section>
+    
 </body>
 </html>
