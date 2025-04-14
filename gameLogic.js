@@ -20,6 +20,7 @@ for (let i = 0; i < shuffledLetters.length; i++) {
                     
                     if(document.querySelectorAll('.lettersMatch').length === letters.length){
                         alert("Congratulation! You Have Won The Game!")
+                        window.location.reload();
                     }
                 }
                 else{
