@@ -93,26 +93,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
-    background: #88d5ffdf;
+    font-size: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #00888a;
+    color: #ffffff;
     transform: rotateY(180deg);
-    transition: 0.25s;
-    border-radius: 5px;
 }
 .lettersFaceUp{
     transform: rotateY(0deg);
-}
-.letters::after{
-    content: '';
-    position: absolute;
-    inset: 0;
-    background:88d5ffdf;
-    border-radius: 5px;
-    transition: 0.25s;
-    transform: rotateY(0deg);
-    backface-visibility: hidden;
-}
-.lettersFaceUp,
-.lettersMatch{
-    transform: rotateY(180deg);
 }
