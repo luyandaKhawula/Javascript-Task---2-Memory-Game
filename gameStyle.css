@@ -23,6 +23,12 @@ body{
     align-items: center;
     text-align: center;
 }
+.scoreTime h1{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
 .gameArea{
     display: flex;
     flex-direction: column;
@@ -63,7 +69,7 @@ body{
     align-items: center;
 }
 .controls{
-    width: 100%;
+    width: 50%;
     height: 100px;
     display: flex;
     flex-direction: row;
